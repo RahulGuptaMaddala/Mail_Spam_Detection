@@ -26,13 +26,13 @@ def spam_prediction(input_data):
         
 def main():
     st.title('Spam detection')
-    Category = st.text_input('Number of Category')
-    Message = st.text_input('Name of Message')
+    v1 = st.text_input('Number of v1')
+    v2 = st.text_input('Name of v2')
     
     diagnosis=""
     
-    if st.button("Diabetes Test Result"):
-        diagnosis=diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
+    if st.button("Spam Detection Result"):
+        diagnosis=spam_detection('v1','v2')
     
     st.success(diagnosis)
     
